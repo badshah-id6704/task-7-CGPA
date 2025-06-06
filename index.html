@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student CGPA Table</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #f8f9fa, #dff9fb);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    table {
+      width: 80%;
+      border-collapse: collapse;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      background: #ffffff;
+      border-radius: 15px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 12px 20px;
+      text-align: center;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      background: #2980b9;
+      color: #fff;
+      font-size: 18px;
+    }
+
+    td {
+      font-size: 16px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f1f9ff;
+    }
+
+    tr:hover {
+      background-color: #d0f0fd;
+      transition: 0.3s;
+    }
+
+    caption {
+      caption-side: top;
+      font-size: 24px;
+      font-weight: bold;
+      margin: 15px;
+      color: #2d3436;
+    }
+  </style>
+</head>
+<body>
+
+  <table>
+    <caption>Student Academic Record</caption>
+    <tr>
+      <th>Name</th>
+      <th>Registration No</th>
+      <th colspan="2">CGPA (Till Last Semester)</th>
+    </tr>
+    <tr>
+      <td rowspan="2">Badshah Kumar</td>
+      <td rowspan="2">22105110034</td>
+      <td>Semester 5</td>
+      <td>8.7</td>
+    </tr>
+    <tr>
+      <td>Semester 6</td>
+      <td>8.9</td>
+    </tr>
+    <tr>
+      <td>Neha Sharma</td>
+      <td>22105110012</td>
+      <td colspan="2">8.4</td>
+    </tr>
+    <tr>
+      <td>Ravi Raj</td>
+      <td>22105110022</td>
+      <td colspan="2">8.6</td>
+    </tr>
+  </table>
+
+</body>
+</html>
